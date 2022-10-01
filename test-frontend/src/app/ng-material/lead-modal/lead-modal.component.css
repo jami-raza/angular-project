@@ -1,0 +1,68 @@
+:host /deep/ .mat-tab-group {
+    flex-direction: row;
+   
+  }
+  :host /deep/ .mat-tab-header {
+    border-bottom: none;
+  }
+  :host /deep/ .mat-tab-header-pagination {
+    display: none !important;
+  }
+  :host /deep/ .mat-tab-labels {
+    flex-direction: column;
+    background-color: #8080801c;
+    margin-right: 20px;
+
+  }
+  :host /deep/ .mat-tab-label {
+    border-bottom: 1px solid #00000045;
+    min-width: 250px;
+    justify-content: left !important;
+  }
+  :host /deep/ .mat-ink-bar {
+    height: 100%;
+    left: 98% !important;
+  }
+  :host /deep/ .mat-tab-body-wrapper {
+    flex: 1 1 auto;
+  }
+
+  .modal-header{
+    padding: 10px 10px;
+    
+  }
+  .modal-header h2{
+    margin-bottom: 0px;
+  }
+  .dialog-body{
+    padding:20px 50px 20px 0px;
+    min-width: 650px;
+  }
+  .list-item{
+    border: 1px solid #e1e1e1;
+    border-bottom: 5px solid #23df23;
+    margin-bottom: 10px;
+    height: 55px;
+    padding: 5px 0px;
+    cursor: pointer;
+  }
+  .list-item mat-icon{
+    color: #23df23;
+  }
+
+  :host /deep/ .mat-tab-label-active {
+    background-color: rgb(36 198 227 / 28%);
+}
+
+:host /deep/ .mat-list-item{
+    height: 100%!important;
+}
+
+:host /deep/ .mat-dialog-content{
+    max-height: 100%;
+    overflow:unset;
+}
+.nav-link{
+    text-decoration: none;
+}
+

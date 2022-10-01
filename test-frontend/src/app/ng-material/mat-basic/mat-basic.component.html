@@ -1,0 +1,65 @@
+<div class="modal-header">
+    <div class="modal-header-title">
+        <mat-icon >add_circle</mat-icon>
+        
+    <h2 mat-dialog-title >Add Automation</h2>
+    </div>
+    <div>
+
+        <mat-icon [mat-dialog-close]="true">close</mat-icon>
+    </div>
+
+    
+</div>
+
+
+<mat-dialog-content class="mat-typography">
+    <!-- <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                 placeholder="Ex. pat@example.com">
+          <mat-hint>Errors appear instantly!</mat-hint>
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </form> -->
+      <div class="example-container">
+        <div class="form-container">
+          <form [formGroup]="loginForm" (submit)="submit()" class="automation-form">
+            <mat-form-field class="form-field" appearance="standard">
+              <mat-label> Automation name
+              </mat-label>
+              <input matInput="" formControlName="automation_name" required >
+              <!-- <mat-error *ngIf="loginForm">
+                <span *ngIf="loginForm.controls.email.errors.required">This field is mandatory.</span>
+                
+              </mat-error> -->
+            </mat-form-field>
+            <mat-form-field class="form-field" appearance="standard">
+              <mat-label> Project Name
+              </mat-label>
+              <input matInput="" formControlName="project_name" type="text" required>
+              <!-- <mat-error *ngIf="loginForm.controls.password.touched && loginForm.controls.password.invalid">
+                <span *ngIf="loginForm.controls.password.errors.required">This field is mandatory.</span>
+              </mat-error> -->
+            </mat-form-field>
+       
+            <!-- <button mat-raised-button color="primary" type="submit">Log In</button> -->
+            <mat-dialog-actions align="end">
+              <button mat-button mat-dialog-close>Cancel</button>
+              <button mat-button cdkFocusInitial type="submit" mat-raised-button color="primary" >Install</button>
+            </mat-dialog-actions>
+          </form>
+        </div>
+      </div>
+      
+</mat-dialog-content>
+
+
+
+

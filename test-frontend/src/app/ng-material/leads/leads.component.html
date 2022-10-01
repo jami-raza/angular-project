@@ -1,0 +1,17 @@
+<div class="leads-container">
+    <div class="leads" *ngFor="let lead of leads">
+        <div class="lead">
+            <h3>{{lead.automation_name}}</h3>
+            <p>{{lead.project_name}}</p>
+            <span class="lead-icon">
+                <!-- <select [(ngModel)]="selectedgroup" id="{{lead.id}}">
+                    <option >Wait</option>
+                    <option >IF</option>
+                 </select> -->
+                <mat-icon (click)="getVal()">add</mat-icon>
+            </span>
+            </div>
+
+    </div>
+</div>
+

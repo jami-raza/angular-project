@@ -1,0 +1,45 @@
+.leads-container {
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+    padding-top: 50px;
+}
+.leads {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.lead {
+    background: #fff;
+    padding: 5px 10px;
+    margin-bottom: 45px;
+    border-bottom: 5px solid #23df23;
+    position: relative;
+}
+
+.lead h3{
+    margin-bottom: 0px;
+}
+.lead p{
+    
+    color: grey;
+    font-size: 14px;
+}
+
+.lead span mat-icon{
+    color: #23df23;
+}
+.lead-icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #23df23;
+    bottom: -30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
